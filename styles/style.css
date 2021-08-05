@@ -42,6 +42,7 @@ p{
 .orange{
   background-color: var(--c-brightorange);
   color: var(--c-transparentwhite);
+  border-radius: 10px 10px 0 0 ;
 }
 .cyan{
   background-color: var(--c-darkcyan);
