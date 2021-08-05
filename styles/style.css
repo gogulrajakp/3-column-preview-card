@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
+:root{
+  --c-brightorange:#e38826;
+  --c-darkcyan:#006970;
+  --c-verydarkcyan:#004241;
+  --c-transparentwhite:#ffffff;
+  --c-verylightgray:#f2f2f2;
+}
+
+html{
+  font-size: 15px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,5 +19,113 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lexand Deca', sans-serif;
+  color: black;
+}
+
+h3{
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+p{
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.container{
+  padding: 20px;
+}
+
+.card{
+  padding: 2rem;
+}
+.orange{
+  background-color: var(--c-brightorange);
+  color: var(--c-transparentwhite);
+}
+.cyan{
+  background-color: var(--c-darkcyan);
+  color: var(--c-transparentwhite);
+}
+.darkcyan{
+  background-color:var(--c-verydarkcyan);
+  color: var(--c-transparentwhite);
+  border-radius: 0 0 10px 10px;
+}
+
+.btn{
+  background-color: var(--c-transparentwhite);
+  border: 2px solid var(--c-transparentwhite);
+  border-radius: 2rem;
+  padding: 10px 20px;
+  cursor:pointer;
+  transition: all 0.4s ease;
+}
+
+.orange .btn{
+  color: var(--c-brightorange);
+}
+.orange .btn:hover{
+  border: 2px solid var(--c-transparentwhite);
+  background-color: var(--c-brightorange);
+  color: var(--c-transparentwhite);
+}
+.cyan .btn{
+  color: var(--c-darkcyan);
+}
+.cyan .btn:hover{
+  border: 2px solid var(--c-transparentwhite);
+  background-color: var(--c-darkcyan);
+  color: var(--c-darkcyan)
+}
+.darkcyan .btn{
+  color: var(--c-verydarkcyan);
+}
+.darkcyan .btn:hover{
+  border: 2px solid var(--c-transparentwhite);
+  background-color: var(--c-verydarkcyan);
+  color: var(--c-transparentwhite);
+}
+.card img{
+  margin-bottom: 25px;
+}
+.card h3{
+  margin-bottom: 20px;
+}
+.card p{
+  margin-bottom: 32px;
+}
+@media(min-width:991px){
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .orange{
+    border-radius: 10px 0 0 10px;
+  }
+
+  .darkcyan{
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card{
+    padding: 3rem;
+  }
+
+  .card p{
+    margin-bottom: 4.5rem;
+  }
+}
+/* attribution */
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }
